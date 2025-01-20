@@ -1,0 +1,87 @@
+.nav-header {
+  background-color: rgb(65, 56, 56);
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 22;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.website-logo {
+  height: 25px;
+  padding: 15px;
+  margin-right: 50px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.nav-menu .nav-link li {
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu .nav-link li:hover {
+  background-color: #34495e;
+}
+
+.logout-desktop-btn,
+.logout-mobile-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.logout-desktop-btn {
+  display: block;
+}
+
+.logout-mobile-btn {
+  display: none;
+  background-color: transparent;
+}
+
+.logout-icon {
+  width: 25px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .logout-desktop-btn {
+    display: none;
+  }
+
+  .logout-mobile-btn {
+    display: block;
+  }
+}
